@@ -1,0 +1,23 @@
+{
+  "services": [
+    {
+      "title": "Corporate Law",
+      "description": "Helping businesses with contracts, compliance, and corporate matters."
+    },
+
+    {
+      "title": "Family Law",
+      "description": "Providing legal assistance for family concerns and disputes."
+    },
+
+    {
+      "title": "Real Estate Law",
+      "description": "Handling property transactions and land-related legal matters."
+    },
+
+    {
+      "title": "Criminal Defense",
+      "description": "Protecting clients' rights through legal representation."
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.App"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+
+<Page>
+
+    <customHeader>
+
+        <Bar>
+
+            <contentLeft>
+
+                <Title
+                    text="Justice Law Firm"
+                    titleStyle="H3"/>
+
+            </contentLeft>
+
+
+            <contentRight>
+
+                <Button
+                    icon="sap-icon://home"
+                    text="Home"
+                    press="onHome"
+                    class="sapUiSmallMarginBegin"/>
+
+
+                <Button
+                    icon="sap-icon://employee"
+                    text="About"
+                    press="onAbout"
+                    class="sapUiSmallMarginBegin"/>
+
+
+                <Button
+                    icon="sap-icon://customer-view"
+                    text="Services"
+                    press="onServices"
+                    class="sapUiSmallMarginBegin"/>
+
+
+                <Button
+                    icon="sap-icon://employee"
+                    text="Attorney"
+                    press="onAttorney"
+                    class="sapUiSmallMarginBegin"/>
+
+
+                <Button
+                    icon="sap-icon://email"
+                    text="Contact"
+                    press="onContact"
+                    class="sapUiSmallMarginBegin"/>
+
+
+            </contentRight>
+
+        </Bar>
+
+    </customHeader>
+
+
+    <content>
+
+
+        <App
+            id="app"/>
+
+
+    </content>
+
+
+</Page>
+
+
+</mvc:View>

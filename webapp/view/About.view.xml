@@ -1,0 +1,121 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.About"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+
+    <Page
+        title="About Us">
+
+        <content>
+
+            <VBox
+                class="sapUiLargeMargin">
+
+            <Title
+                text="{about>/officeName}"
+                level="H1"/>
+
+
+            <Text
+                text="{about>/description}"
+                wrapping="true"/>
+
+
+            <Panel
+                headerText="Office Hours"
+                class="sapUiMediumMarginTop">
+
+                <content>
+
+                    <VBox>
+
+                        <HBox>
+
+                            <core:Icon
+                                src="sap-icon://time-entry-request"
+                                size="1.5rem"
+                                class="sapUiSmallMarginEnd"/>
+
+
+                            <Text
+                                text="{about>/officeHours/weekday}"
+                                wrapping="true"/>
+
+                        </HBox>
+
+
+                        <HBox
+                            class="sapUiSmallMarginTop">
+
+
+                            <core:Icon
+                                src="sap-icon://appointment-2"
+                                size="1.5rem"
+                                class="sapUiSmallMarginEnd"/>
+
+
+                            <Text
+                                text="{about>/officeHours/weekend}"
+                                wrapping="true"/>
+
+
+                        </HBox>
+
+
+                    </VBox>
+
+        </content>
+
+            </Panel>
+
+            
+            <Panel
+                headerText="Office Address"
+                class="sapUiMediumMarginTop">
+
+                <content>
+
+                    <VBox>
+
+
+                        <HBox>
+
+                            <core:Icon
+                                src="sap-icon://map"
+                                size="1.5rem"
+                                class="sapUiSmallMarginEnd"/>
+
+
+                            <Text
+                                text="{about>/address/street}"
+                                wrapping="true"/>
+
+                        </HBox>
+
+
+                        <Text
+                            text="{about>/address/barangay}"
+                            class="sapUiLargeMarginBegin"/>
+
+
+                        <Text
+                            text="{about>/address/city}"
+                            class="sapUiLargeMarginBegin"/>
+
+
+                    </VBox>
+
+                </content>
+
+            </Panel>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+
+</mvc:View>

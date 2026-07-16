@@ -1,0 +1,33 @@
+{
+    "lawyers": [
+
+        {
+            "name": "John Smith",
+            "position": "Senior Attorney",
+            "specialization": "Corporate Law",
+            "experience": "15 Years of Experience"
+        },
+
+        {
+            "name": "Sarah Johnson",
+            "position": "Family Law Specialist",
+            "specialization": "Family Law",
+            "experience": "10 Years of Experience"
+        },
+
+        {
+            "name": "David Cruz",
+            "position": "Criminal Defense Lawyer",
+            "specialization": "Criminal Law",
+            "experience": "12 Years of Experience"
+        },
+
+        {
+            "name": "Emily Williams",
+            "position": "Property Lawyer",
+            "specialization": "Real Estate Law",
+            "experience": "8 Years of Experience"
+        }
+
+    ]
+}

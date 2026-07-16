@@ -1,0 +1,20 @@
+{
+    "officeName": "Danglose Law Office",
+
+    "description": "Providing trusted legal and notarial services with professionalism, integrity, and dedication to serving individuals, families, and businesses.",
+
+    "whoWeAre": "Danglose Law Office provides legal representation and notarial services with a commitment to professionalism, integrity, and client-focused solutions.",
+
+    "mission": "To provide quality legal and notarial services while upholding professionalism, integrity, and excellence.",
+
+    "officeHours": {
+        "weekday": "Monday - Friday | 9:30 AM - 6:00 PM",
+        "weekend": "Saturday & Sunday | By Appointment"
+    },
+
+    "address": {
+        "street": "877 Adiwang Road",
+        "barangay": "Dontogan",
+        "city": "Baguio City"
+    }
+}

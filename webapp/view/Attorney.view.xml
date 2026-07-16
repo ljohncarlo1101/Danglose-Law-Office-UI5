@@ -1,0 +1,116 @@
+<mvc:View
+
+controllerName="com.john.employeeapp.com.john.employeeapp.controller.Attorney"
+xmlns:mvc="sap.ui.core.mvc"
+xmlns="sap.m"
+xmlns:core="sap.ui.core">
+
+
+<Page
+    title="Attorney Profile">
+
+    <content>
+
+        <VBox
+            class="sapUiLargeMargin">
+
+
+            <Title
+                text="{attorney>/name}"
+                level="H1"/>
+
+
+            <Title
+                text="{attorney>/title}"
+                level="H3"/>
+
+
+            <Text
+                text="{attorney>/office}"
+                wrapping="true"
+                class="sapUiSmallMarginTop"/>
+
+
+        </VBox>
+
+        <Panel
+            headerText="Professional Profile"
+            class="sapUiMediumMarginTop">
+
+        <content>
+
+            <Text
+                text="{attorney>/description}"
+                wrapping="true"/>
+
+        </content>
+
+        </Panel>
+
+        <Panel
+            headerText="Areas of Practice"
+            class="sapUiMediumMarginTop">
+
+            <content>
+
+                <VBox
+                    items="{attorney>/practiceAreas}">
+
+
+                    <Panel
+                        class="sapUiSmallMargin">
+
+
+                        <content>
+
+
+                            <HBox>
+
+
+                                <core:Icon
+                                    src="{attorney>icon}"
+                                    size="2rem"
+                                    class="sapUiSmallMarginEnd"/>
+
+
+                                <VBox>
+
+
+                                    <Title
+                                        text="{attorney>name}"
+                                        level="H4"/>
+
+
+                                    <Text
+                                        text="{attorney>description}"
+                                        wrapping="true"/>
+
+
+                                </VBox>
+
+
+                            </HBox>
+
+
+                        </content>
+
+
+                    </Panel>
+
+
+                </VBox>
+
+
+            </content>
+
+
+        </Panel>
+
+
+    </content>
+
+
+</Page>
+
+
+</mvc:View>

@@ -1,0 +1,113 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.Home"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+    <Page
+        title="Danglose Law Office">
+
+        <content>
+
+    <VBox
+        justifyContent="Center"
+        alignItems="Center"
+        class="sapUiLargeMargin">
+
+        <Title
+            text="Justice. Integrity. Excellence."
+            level="H1"/>
+
+        <Text
+            text="Professional legal services you can trust." />
+
+        <Button
+            text="Book a Consultation"
+            type="Emphasized"
+            press="onBookConsultation"
+            class="sapUiMediumMarginTop"/>
+
+        <Button
+            text="Our Services"
+            press="onServices"
+            class="sapUiSmallMarginTop"/>
+
+        <Title
+            text="Why Choose Us?"
+            level="H2"
+            class="sapUiLargeMarginTop"/>
+
+            <HBox
+                justifyContent="Center"
+                wrap="Wrap"
+                class="sapUiMediumMarginTop">
+            
+
+                    <Panel
+                        width="250px"
+                        class="sapUiSmallMargin">
+
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Legal Consultation"/>
+                            </Toolbar>
+                        </headerToolbar>
+
+                        <content>
+                            <core:Icon
+                                src="sap-icon://discussion-2"
+                                size="2rem"
+                                class="sapUiSmallMarginBottom"/>
+
+                            <Text
+                                text="Professional legal advice tailored to your needs."/>
+                        </content>
+                    </Panel>
+
+                    <Panel
+                        width="250px"
+                        class="sapUiSmallMargin">
+
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Experienced Lawyers"/>
+                            </Toolbar>
+                        </headerToolbar>
+
+                        <content>
+                            <core:Icon
+                                src="sap-icon://group"
+                                size="2rem"/>
+                            <Text
+                                text="Our Experienced Attorneys are Ready to Assist You!."/>
+                        </content>
+                    </Panel>
+
+                    <Panel
+                        width="250px"
+                        class="sapUiSmallMargin">
+
+                        <headerToolbar>
+                            <Toolbar>
+                                <Title text="Client-Focused Service"/>
+                            </Toolbar>
+                        </headerToolbar>
+
+                        <content>
+                            <core:Icon
+                                src="sap-icon://customer"
+                                size="2rem"/>
+                            <Text
+                                text="We Provide Personalized Legal Solutions with Integrity."/>
+                        </content>
+                    </Panel>
+
+            </HBox>
+
+    </VBox>
+
+</content>
+
+    </Page>
+
+</mvc:View>

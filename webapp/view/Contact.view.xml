@@ -1,0 +1,63 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.Contact"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+    <Page title="Book a Consultation">
+
+        <content>
+
+            <VBox class="sapUiMediumMargin">
+
+                <Title
+                    text="Book a Consultation"
+                    level="H2"/>
+
+                <Label text="Full Name"/>
+
+                <Input
+                    id="inputName"
+                    value="{contact>/name}"
+                    placeholder="Enter your full name"/>
+
+                <Label text="Email Address"/>
+
+                <Input
+                    id="inputEmail"
+                    value="{contact>/email}"
+                    placeholder="Enter your email"/>
+
+                <Label text="Phone Number"/>
+
+                <Input
+                    id="inputPhone"
+                    value="{contact>/phone}"
+                    placeholder="Enter your phone number"/>
+
+                <Label text="Legal Concern"/>
+
+                <Input
+                    id="inputConcern"
+                    value="{contact>/concern}"
+                    placeholder="Example: Family Law"/>
+
+                <Label text="Message"/>
+
+                <TextArea
+                    id="inputMessage"
+                    value="{contact>/message}"
+                    rows="5"
+                    placeholder="Describe your concern"/>
+
+                <Button
+                    text="Submit Consultation"
+                    type="Emphasized"
+                    press="onSubmit"/>
+
+            </VBox>
+
+        </content>
+
+    </Page>
+
+</mvc:View>

@@ -1,0 +1,38 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.Services"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m">
+
+
+<Page title="Legal Services">
+
+
+<content>
+
+    <List
+items="{services>/services}">
+
+
+<items>
+
+
+<StandardListItem
+
+title="{services>title}"
+
+description="{services>description}"/>
+
+
+</items>
+
+
+</List>
+
+
+</content>
+
+
+</Page>
+
+
+</mvc:View>

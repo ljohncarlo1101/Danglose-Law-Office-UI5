@@ -1,0 +1,179 @@
+{
+  "_version": "1.86.0",
+  "sap.app": {
+    "id": "com.john.employeeapp.com.john.employeeapp",
+    "type": "application",
+    "i18n": "i18n/i18n.properties",
+    "applicationVersion": {
+      "version": "0.0.1"
+    },
+    "title": "{{appTitle}}",
+    "description": "{{appDescription}}",
+    "resources": "resources.json",
+    "sourceTemplate": {
+      "id": "@sap/generator-fiori:basic",
+      "version": "1.28.0",
+      "toolsId": "59a5059b-136e-454c-be7a-74813468ffec"
+    }
+  },
+  "sap.ui": {
+    "technology": "UI5",
+    "icons": {
+      "icon": "",
+      "favIcon": "",
+      "phone": "",
+      "phone@2": "",
+      "tablet": "",
+      "tablet@2": ""
+    },
+    "deviceTypes": {
+      "desktop": true,
+      "tablet": true,
+      "phone": true
+    }
+  },
+  "sap.ui5": {
+    "flexEnabled": false,
+    "dependencies": {
+      "minUI5Version": "1.150.0",
+      "libs": {
+        "sap.m": {},
+        "sap.ui.core": {}
+      }
+    },
+    "contentDensities": {
+      "compact": true,
+      "cozy": true
+    },
+    "models": {
+      "i18n": {
+        "type": "sap.ui.model.resource.ResourceModel",
+        "settings": {
+          "bundleName": "com.john.employeeapp.com.john.employeeapp.i18n.i18n"
+        }
+      },
+
+      "services": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/services.json"
+      },
+
+      "lawyers": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/lawyers.json"
+      },
+
+      "contact": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/contact.json"
+      },
+
+      "about": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/about.json"
+      },
+
+      "attorney": {
+        "type": "sap.ui.model.json.JSONModel",
+        "uri": "model/attorney.json"
+      }
+    },
+    "resources": {
+      "css": [
+        {
+          "uri": "css/style.css"
+        }
+      ]
+    },
+
+    "routing": {
+      "config": {
+        "routerClass": "sap.m.routing.Router",
+
+        "controlAggregation": "pages",
+
+        "controlId": "app",
+
+        "transition": "slide",
+
+        "type": "View",
+
+        "viewType": "XML",
+
+        "path": "com.john.employeeapp.com.john.employeeapp.view",
+
+        "async": true
+      },
+
+      "routes": [
+        {
+          "name": "RouteHome",
+          "pattern": "",
+          "target": "TargetHome"
+        },
+
+        {
+          "name": "RouteAbout",
+          "pattern": "about",
+          "target": "TargetAbout"
+        },
+
+        {
+          "name": "RouteServices",
+          "pattern": "services",
+          "target": "TargetServices"
+        },
+
+        {
+          "name": "RouteAttorney",
+          "pattern": "attorney",
+          "target": "TargetAttorney"
+        },
+
+        {
+          "name": "RouteContact",
+          "pattern": "contact",
+          "target": "TargetContact"
+        }
+      ],
+
+      "targets": {
+        "TargetHome": {
+          "viewName": "Home",
+          "viewId": "Home",
+          "viewLevel": 1
+        },
+
+        "TargetAbout": {
+          "viewName": "About",
+          "viewId": "About",
+          "viewLevel": 2
+        },
+
+        "TargetServices": {
+          "viewName": "Services",
+          "viewId": "Services",
+          "viewLevel": 2
+        },
+
+        "TargetAttorney": {
+          "viewName": "Attorney",
+          "viewId": "Attorney",
+          "viewLevel": 2
+        },
+
+        "TargetContact": {
+          "viewName": "Contact",
+          "viewId": "Contact",
+          "viewLevel": 2
+        }
+      }
+    },
+    "rootView": {
+      "viewName": "com.john.employeeapp.com.john.employeeapp.view.App",
+      "type": "XML",
+      "id": "App",
+      "async": true
+    }
+  }
+}

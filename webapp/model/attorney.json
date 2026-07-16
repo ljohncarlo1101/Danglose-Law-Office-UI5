@@ -1,0 +1,27 @@
+{
+    "name": "Atty. Denize C. Danglose",
+
+    "title": "Attorney at Law",
+
+    "office": "Danglose Law Office",
+
+    "description": "Atty. Denize C. Danglose provides legal and notarial services with professionalism, integrity, and dedication to helping individuals, families, and businesses.",
+
+    "practiceAreas": [
+        {
+            "name": "Legal Consultation",
+            "description": "Providing legal guidance and advice to help clients understand their legal concerns.",
+            "icon": "sap-icon://discussion"
+        },
+        {
+            "name": "Notarial Services",
+            "description": "Assistance with notarization and preparation of legal documents.",
+            "icon": "sap-icon://document-text"
+        },
+        {
+            "name": "Legal Documentation",
+            "description": "Preparation and review of legal documents and agreements.",
+            "icon": "sap-icon://create-form"
+        }
+    ]
+}
