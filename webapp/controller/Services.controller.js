@@ -5,7 +5,7 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend(
-        "com.john.employeeapp.com.john.employeeapp.controller.Services",
+        "com.john.employeeapp.com.john.employeeapp.controller.ServiceDetail",
         {
 
             onInit() {
@@ -14,16 +14,29 @@ sap.ui.define([
 
             onLearnMore(oEvent) {
 
+
                 const oButton = oEvent.getSource();
 
-                const oContext = oButton
-                    .getBindingContext("services");
+
+                const oContext =
+                    oButton.getBindingContext("services");
 
 
-                const sTitle = oContext.getProperty("title");
+                const sTitle =
+                    oContext.getProperty("title");
 
 
-                console.log("Selected Service:", sTitle);
+                const oRouter =
+                    this.getOwnerComponent().getRouter();
+
+
+                oRouter.navTo(
+                    "RouteServiceDetail",
+                    {
+                        serviceId: sTitle
+                    }
+                );
+
 
             }
 

@@ -134,6 +134,12 @@
           "name": "RouteContact",
           "pattern": "contact",
           "target": "TargetContact"
+        },
+
+        {
+          "name": "RouteServiceDetail",
+          "pattern": "service/{serviceId}",
+          "target": "TargetServiceDetail"
         }
       ],
 
@@ -165,6 +171,12 @@
         "TargetContact": {
           "viewName": "Contact",
           "viewId": "Contact",
+          "viewLevel": 2
+        },
+
+        "TargetServiceDetail": {
+          "viewName": "ServiceDetail",
+          "viewId": "ServiceDetail",
           "viewLevel": 2
         }
       }

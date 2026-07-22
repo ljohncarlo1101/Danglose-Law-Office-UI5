@@ -1,0 +1,19 @@
+<mvc:View
+  controllerName="com.john.employeeapp.com.john.employeeapp.controller.ServiceDetail"
+  xmlns:mvc="sap.ui.core.mvc"
+  xmlns="sap.m"
+>
+  <Page title="Service Details">
+    <content>
+      <VBox class="sapUiLargeMargin">
+        <Title text="{services>/selected/title}" level="H1" />
+
+        <Text
+          text="{services>/selected/description}"
+          wrapping="true"
+          class="sapUiSmallMarginTop"
+        />
+      </VBox>
+    </content>
+  </Page>
+</mvc:View>
