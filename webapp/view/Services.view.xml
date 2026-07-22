@@ -1,38 +1,92 @@
 <mvc:View
     controllerName="com.john.employeeapp.com.john.employeeapp.controller.Services"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
 
-<Page title="Legal Services">
+    <Page
+        title="Legal Services">
+
+        <content>
+
+            <VBox
+                class="sapUiLargeMargin">
 
 
-<content>
-
-    <List
-items="{services>/services}">
-
-
-<items>
+                <Title
+                    text="Our Legal Services"
+                    level="H1" />
 
 
-<StandardListItem
-
-title="{services>title}"
-
-description="{services>description}"/>
-
-
-</items>
+                <Text
+                    text="Providing professional legal and notarial assistance tailored to your needs."
+                    wrapping="true"
+                    class="sapUiSmallMarginBottom" />
 
 
-</List>
+                <VBox
+                    items="{services>/services}">
 
 
-</content>
+                    <Panel
+                        class="sapUiSmallMarginBottom">
 
 
-</Page>
+                        <content>
+
+                            <HBox
+                                alignItems="Center">
+
+
+                                <core:Icon
+                                    src="{services>icon}"
+                                    size="2rem"
+                                    class="sapUiSmallMarginEnd" />
+
+
+                                <VBox>
+
+
+                                    <Title
+                                        text="{services>title}"
+                                        level="H3" />
+
+
+                                    <Text
+                                        text="{services>description}"
+                                        wrapping="true" />
+
+
+                                    <Button
+                                        text="Learn More"
+                                        type="Emphasized"
+                                        class="sapUiSmallMarginTop"
+                                        press="onLearnMore" />
+
+
+                                </VBox>
+
+
+                            </HBox>
+
+
+                        </content>
+
+
+                    </Panel>
+
+
+                </VBox>
+
+
+            </VBox>
+
+
+        </content>
+
+
+    </Page>
 
 
 </mvc:View>

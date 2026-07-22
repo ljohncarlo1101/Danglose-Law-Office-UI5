@@ -1,15 +1,32 @@
 sap.ui.define([
     "sap/ui/core/mvc/Controller"
-],
-(Controller) => {
+], (Controller) => {
 
-"use strict";
+    "use strict";
+
+    return Controller.extend(
+        "com.john.employeeapp.com.john.employeeapp.controller.Services",
+        {
+
+            onInit() {
+
+            },
+
+            onLearnMore(oEvent) {
+
+                const oButton = oEvent.getSource();
+
+                const oContext = oButton
+                    .getBindingContext("services");
 
 
-return Controller.extend(
-"com.john.employeeapp.com.john.employeeapp.controller.Services",
-{
+                const sTitle = oContext.getProperty("title");
 
-});
+
+                console.log("Selected Service:", sTitle);
+
+            }
+
+        });
 
 });

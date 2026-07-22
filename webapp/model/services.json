@@ -1,23 +1,24 @@
 {
-  "services": [
-    {
-      "title": "Corporate Law",
-      "description": "Helping businesses with contracts, compliance, and corporate matters."
-    },
-
-    {
-      "title": "Family Law",
-      "description": "Providing legal assistance for family concerns and disputes."
-    },
-
-    {
-      "title": "Real Estate Law",
-      "description": "Handling property transactions and land-related legal matters."
-    },
-
-    {
-      "title": "Criminal Defense",
-      "description": "Protecting clients' rights through legal representation."
-    }
-  ]
+    "services": [
+        {
+            "title": "Legal Consultation",
+            "description": "Professional legal advice and guidance for individuals, families, and businesses.",
+            "icon": "sap-icon://customer"
+        },
+        {
+            "title": "Notarial Services",
+            "description": "Notarization of affidavits, contracts, deeds, and other legal documents.",
+            "icon": "sap-icon://document"
+        },
+        {
+            "title": "Legal Document Preparation",
+            "description": "Preparation and review of contracts, agreements, and legal documents.",
+            "icon": "sap-icon://edit"
+        },
+        {
+            "title": "Legal Representation",
+            "description": "Representation and legal assistance for various legal matters.",
+            "icon": "sap-icon://person-placeholder"
+        }
+    ]
 }
