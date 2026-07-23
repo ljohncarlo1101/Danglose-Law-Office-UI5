@@ -1,19 +1,168 @@
 <mvc:View
-  controllerName="com.john.employeeapp.com.john.employeeapp.controller.ServiceDetail"
-  xmlns:mvc="sap.ui.core.mvc"
-  xmlns="sap.m"
->
-  <Page title="Service Details">
-    <content>
-      <VBox class="sapUiLargeMargin">
-        <Title text="{services>/selected/title}" level="H1" />
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.ServiceDetail"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
-        <Text
-          text="{services>/selected/description}"
-          wrapping="true"
-          class="sapUiSmallMarginTop"
-        />
-      </VBox>
-    </content>
-  </Page>
+
+    <Page
+        title="Service Details">
+
+
+        <content>
+
+
+            <VBox
+                class="sapUiLargeMargin">
+
+
+                <!-- Service Header -->
+
+                <HBox
+                    alignItems="Center"
+                    class="sapUiMediumMarginBottom">
+
+
+                    <core:Icon
+                        src="{services>/selected/icon}"
+                        size="3rem"
+                        class="sapUiMediumMarginEnd"/>
+
+
+                    <VBox>
+
+
+                        <Title
+                            text="{services>/selected/title}"
+                            level="H1"/>
+
+
+                        <Text
+                            text="{services>/selected/description}"
+                            wrapping="true"/>
+
+
+                    </VBox>
+
+
+                </HBox>
+
+
+
+                <!-- Service Details -->
+
+                <Panel
+                    headerText="About This Service"
+                    class="sapUiMediumMarginBottom">
+
+
+                    <content>
+
+
+                        <Text
+                            text="{services>/selected/details}"
+                            wrapping="true"/>
+
+
+                    </content>
+
+
+                </Panel>
+
+
+
+
+                <!-- Requirements -->
+
+
+                <Panel
+                    headerText="Requirements"
+                    class="sapUiMediumMarginBottom">
+
+
+                    <content>
+
+
+                        <List
+                            items="{services>/selected/requirements}">
+
+
+                            <items>
+
+
+                                <StandardListItem
+                                    title="{services>}"/>
+
+
+                            </items>
+
+
+                        </List>
+
+
+                    </content>
+
+
+                </Panel>
+
+
+
+
+
+                <!-- Benefits -->
+
+
+                <Panel
+                    headerText="Benefits"
+                    class="sapUiMediumMarginBottom">
+
+
+                    <content>
+
+
+                        <List
+                            items="{services>/selected/benefits}">
+
+
+                            <items>
+
+
+                                <StandardListItem
+                                    title="{services>}"/>
+
+
+                            </items>
+
+
+                        </List>
+
+
+                    </content>
+
+
+                </Panel>
+
+
+
+
+
+                <!-- Consultation Button -->
+
+
+                <Button
+                    text="Book a Consultation"
+                    type="Emphasized"
+                    icon="sap-icon://appointment-2"
+                    press="onBookConsultation"/>
+
+
+            </VBox>
+
+
+        </content>
+
+
+    </Page>
+
+
 </mvc:View>

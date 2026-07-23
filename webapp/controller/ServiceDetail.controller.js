@@ -12,7 +12,7 @@ sap.ui.define([
 
                 const oRouter =
                     this.getOwnerComponent()
-                    .getRouter();
+                        .getRouter();
 
 
                 oRouter
@@ -31,14 +31,14 @@ sap.ui.define([
                 const sServiceTitle =
                     decodeURIComponent(
                         oEvent
-                        .getParameter("arguments")
-                        .serviceId
+                            .getParameter("arguments")
+                            .serviceId
                     );
 
 
                 const oModel =
                     this.getView()
-                    .getModel("services");
+                        .getModel("services");
 
 
                 const aServices =
@@ -57,6 +57,19 @@ sap.ui.define([
                     oSelectedService
                 );
 
+
+            },
+
+            onBookConsultation() {
+
+                const oRouter =
+                    this.getOwnerComponent()
+                        .getRouter();
+
+
+                oRouter.navTo(
+                    "RouteContact"
+                );
 
             }
 

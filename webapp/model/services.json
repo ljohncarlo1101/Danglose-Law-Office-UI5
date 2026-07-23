@@ -1,24 +1,93 @@
 {
     "services": [
         {
+            "id": "legal-consultation",
             "title": "Legal Consultation",
             "description": "Professional legal advice and guidance for individuals, families, and businesses.",
-            "icon": "sap-icon://customer"
+            "icon": "sap-icon://customer",
+
+            "details": "Our legal consultation service provides clients with professional legal guidance regarding their legal concerns. We help clients understand applicable Philippine laws, assess possible legal options, and determine the appropriate steps to address their situation.",
+
+            "requirements": [
+                "Valid government-issued identification card",
+                "Relevant documents related to the legal concern",
+                "Brief explanation of the situation or concern"
+            ],
+
+            "benefits": [
+                "Better understanding of your legal rights and responsibilities",
+                "Professional assessment of your legal concern",
+                "Guidance on possible legal actions and remedies",
+                "Assistance in making informed legal decisions"
+            ]
         },
+
         {
+            "id": "notarial-services",
             "title": "Notarial Services",
             "description": "Notarization of affidavits, contracts, deeds, and other legal documents.",
-            "icon": "sap-icon://document"
+            "icon": "sap-icon://document",
+
+            "details": "We provide notarial services for various legal documents to help ensure their authenticity and proper execution in accordance with Philippine notarial laws and regulations.",
+
+            "requirements": [
+                "Original document requiring notarization",
+                "Valid government-issued identification card",
+                "Personal appearance of document signatories",
+                "Supporting documents when applicable"
+            ],
+
+            "benefits": [
+                "Proper execution and authentication of legal documents",
+                "Assistance in preparing documents for notarization",
+                "Professional handling of important legal paperwork",
+                "Convenient and reliable notarial assistance"
+            ]
         },
+
         {
+            "id": "legal-document-preparation",
             "title": "Legal Document Preparation",
             "description": "Preparation and review of contracts, agreements, and legal documents.",
-            "icon": "sap-icon://edit"
+            "icon": "sap-icon://edit",
+
+            "details": "We assist clients in preparing, reviewing, and improving legal documents such as contracts, affidavits, agreements, and other documents requiring legal consideration.",
+
+            "requirements": [
+                "Complete details of the parties involved",
+                "Relevant supporting documents",
+                "Specific purpose and requirements of the document"
+            ],
+
+            "benefits": [
+                "Properly structured legal documents",
+                "Reduced risk of unclear terms and provisions",
+                "Professional review of important agreements",
+                "Assistance in understanding legal documents before signing"
+            ]
         },
+
         {
+            "id": "legal-representation",
             "title": "Legal Representation",
             "description": "Representation and legal assistance for various legal matters.",
-            "icon": "sap-icon://person-placeholder"
+            "icon": "sap-icon://person-placeholder",
+
+            "details": "We provide legal representation and assistance for clients involved in legal proceedings and disputes. Each matter is carefully assessed to determine the appropriate legal approach based on the circumstances of the case.",
+
+            "requirements": [
+                "Valid government-issued identification card",
+                "Case-related documents and records",
+                "Relevant notices, pleadings, or communications",
+                "Detailed background information regarding the matter"
+            ],
+
+            "benefits": [
+                "Professional legal assistance throughout the process",
+                "Guidance regarding legal procedures and requirements",
+                "Proper evaluation of available legal options",
+                "Representation based on applicable Philippine laws"
+            ]
         }
     ]
 }
