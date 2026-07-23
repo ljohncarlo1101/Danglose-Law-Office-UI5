@@ -5,7 +5,7 @@ sap.ui.define([
     "use strict";
 
     return Controller.extend(
-        "com.john.employeeapp.com.john.employeeapp.controller.ServiceDetail",
+        "com.john.employeeapp.com.john.employeeapp.controller.Services",
         {
 
             onInit() {
