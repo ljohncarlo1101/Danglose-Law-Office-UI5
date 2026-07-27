@@ -166,6 +166,7 @@
                 <!-- Submit -->
 
                 <Button
+                    id="submitButton"
                     text="Submit Consultation Request"
                     type="Emphasized"
                     icon="sap-icon://paper-plane"

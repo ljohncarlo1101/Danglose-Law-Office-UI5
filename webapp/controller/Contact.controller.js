@@ -167,6 +167,16 @@ sap.ui.define([
 
       sendConsultation() {
 
+        const oButton =
+          this.byId("submitButton");
+
+
+        oButton.setEnabled(false);
+
+        oButton.setText(
+          "Sending Request..."
+        );
+
 
         const oData = {
 
@@ -218,12 +228,26 @@ sap.ui.define([
             if (data.success) {
 
 
-              MessageBox.success(
-                "Your consultation request has been sent successfully."
+              oButton.setEnabled(true);
+
+
+              oButton.setText(
+                "Submit Consultation Request"
               );
 
 
-              this.clearForm();
+              MessageBox.success(
+                "Your consultation request has been sent successfully.",
+                {
+
+                  onClose: () => {
+
+                    this.clearForm();
+
+                  }
+
+                }
+              );
 
 
             }
@@ -236,6 +260,14 @@ sap.ui.define([
 
 
             console.error(error);
+
+
+            oButton.setEnabled(true);
+
+
+            oButton.setText(
+              "Submit Consultation Request"
+            );
 
 
             MessageBox.error(
