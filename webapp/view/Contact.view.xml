@@ -3,61 +3,184 @@
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m">
 
-    <Page title="Book a Consultation">
+
+    <Page
+        title="Book a Consultation">
+
 
         <content>
 
-            <VBox class="sapUiMediumMargin">
+
+            <VBox
+                class="sapUiLargeMargin">
+
 
                 <Title
                     text="Book a Consultation"
-                    level="H2"/>
+                    level="H1"/>
 
-                <Label text="Full Name"/>
+
+                <Text
+                    text="Please provide your information and legal concern. Our office will get back to you as soon as possible."
+                    wrapping="true"
+                    class="sapUiSmallMarginBottom"/>
+
+
+
+
+                <!-- Full Name -->
+
+                <Label
+                    text="Full Name"
+                    required="true"/>
+
 
                 <Input
-                    id="inputName"
-                    value="{contact>/name}"
+                    id="nameInput"
                     placeholder="Enter your full name"/>
 
-                <Label text="Email Address"/>
+
+
+
+                <!-- Email -->
+
+                <Label
+                    text="Email Address"
+                    required="true"
+                    class="sapUiSmallMarginTop"/>
+
 
                 <Input
-                    id="inputEmail"
-                    value="{contact>/email}"
-                    placeholder="Enter your email"/>
+                    id="emailInput"
+                    type="Email"
+                    placeholder="Enter your email address"/>
 
-                <Label text="Phone Number"/>
+
+
+
+
+                <!-- Contact Number -->
+
+                <Label
+                    text="Contact Number"
+                    required="true"
+                    class="sapUiSmallMarginTop"/>
+
 
                 <Input
-                    id="inputPhone"
-                    value="{contact>/phone}"
-                    placeholder="Enter your phone number"/>
+                    id="phoneInput"
+                    placeholder="09XXXXXXXXX"/>
 
-                <Label text="Legal Concern"/>
 
-                <Input
-                    id="inputConcern"
-                    value="{contact>/concern}"
-                    placeholder="Example: Family Law"/>
 
-                <Label text="Message"/>
+
+
+
+                <!-- Service Selection -->
+
+                <Label
+                    text="Legal Service"
+                    required="true"
+                    class="sapUiSmallMarginTop"/>
+
+
+                <Select
+                    id="serviceSelect"
+                    items="{services>/services}">
+
+
+                    <items>
+
+
+                        <core:Item
+                            xmlns:core="sap.ui.core"
+                            key="{services>id}"
+                            text="{services>title}"/>
+
+
+                    </items>
+
+
+                </Select>
+
+
+
+
+
+
+                <!-- Message -->
+
+                <Label
+                    text="Describe Your Concern"
+                    required="true"
+                    class="sapUiSmallMarginTop"/>
+
 
                 <TextArea
-                    id="inputMessage"
-                    value="{contact>/message}"
+                    id="messageInput"
                     rows="5"
-                    placeholder="Describe your concern"/>
+                    placeholder="Briefly describe your legal concern"/>
+
+
+
+
+
+
+                <!-- Preferred Contact -->
+
+                <Label
+                    text="Preferred Contact Method"
+                    class="sapUiSmallMarginTop"/>
+
+
+                <RadioButtonGroup
+                    id="contactMethod">
+
+
+                    <buttons>
+
+
+                        <RadioButton
+                            text="Email"/>
+
+
+                        <RadioButton
+                            text="Phone Call"/>
+
+
+                        <RadioButton
+                            text="Office Visit"/>
+
+
+                    </buttons>
+
+
+                </RadioButtonGroup>
+
+
+
+
+
+
+
+                <!-- Submit -->
 
                 <Button
-                    text="Submit Consultation"
+                    text="Submit Consultation Request"
                     type="Emphasized"
-                    press="onSubmit"/>
+                    icon="sap-icon://paper-plane"
+                    press="onSubmit"
+                    class="sapUiMediumMarginTop"/>
+
+
 
             </VBox>
 
+
         </content>
 
+
     </Page>
+
 
 </mvc:View>
