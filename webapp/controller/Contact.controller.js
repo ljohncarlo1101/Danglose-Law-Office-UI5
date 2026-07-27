@@ -160,12 +160,119 @@ sap.ui.define([
 
         }
 
+        this.sendConsultation();
+
+
+      },
+
+      sendConsultation() {
+
+
+        const oData = {
+
+          name:
+            this.byId("nameInput").getValue(),
+
+          email:
+            this.byId("emailInput").getValue(),
+
+          phone:
+            this.byId("phoneInput").getValue(),
+
+          service:
+            this.byId("serviceSelect")
+              .getSelectedItem()
+              .getText(),
+
+          message:
+            this.byId("messageInput").getValue(),
+
+          contactMethod:
+            this.byId("contactMethod")
+              .getSelectedButton()
+              .getText()
+
+        };
 
 
 
-        MessageBox.success(
-          "Your consultation request has been prepared successfully."
-        );
+        fetch(
+          "https://script.google.com/macros/s/AKfycbxL3czpfheESpWS6gIqIMOtyz24L4ogjeqYjiOBonPCVfJq0q-3dLyDJsk1cDlhLKoBiw/exec",
+          {
+
+            method: "POST",
+
+            body:
+              JSON.stringify(oData)
+
+          }
+        )
+
+
+          .then(response => response.json())
+
+
+          .then(data => {
+
+
+            if (data.success) {
+
+
+              MessageBox.success(
+                "Your consultation request has been sent successfully."
+              );
+
+
+              this.clearForm();
+
+
+            }
+
+
+          })
+
+
+          .catch(error => {
+
+
+            console.error(error);
+
+
+            MessageBox.error(
+              "Unable to send your consultation request. Please try again."
+            );
+
+
+          });
+
+
+      },
+
+      clearForm() {
+
+
+        this.byId("nameInput")
+          .setValue("");
+
+
+        this.byId("emailInput")
+          .setValue("");
+
+
+        this.byId("phoneInput")
+          .setValue("");
+
+
+        this.byId("serviceSelect")
+          .setSelectedKey("");
+
+
+        this.byId("messageInput")
+          .setValue("");
+
+
+        this.byId("contactMethod")
+          .setSelectedIndex(-1);
 
 
       }
