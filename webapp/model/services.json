@@ -4,7 +4,7 @@
             "id": "legal-consultation",
             "title": "Legal Consultation",
             "description": "Professional legal advice and guidance for individuals, families, and businesses.",
-            "icon": "sap-icon://customer",
+            "icon": "sap-icon://discussion",
 
             "details": "Our legal consultation service provides clients with professional legal guidance regarding their legal concerns. We help clients understand applicable Philippine laws, assess possible legal options, and determine the appropriate steps to address their situation.",
 
@@ -26,7 +26,7 @@
             "id": "notarial-services",
             "title": "Notarial Services",
             "description": "Notarization of affidavits, contracts, deeds, and other legal documents.",
-            "icon": "sap-icon://document",
+            "icon": "sap-icon://document-text",
 
             "details": "We provide notarial services for various legal documents to help ensure their authenticity and proper execution in accordance with Philippine notarial laws and regulations.",
 

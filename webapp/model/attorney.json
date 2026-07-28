@@ -19,9 +19,14 @@
             "icon": "sap-icon://document-text"
         },
         {
-            "name": "Legal Documentation",
+            "name": "Legal Documentation Preparation",
             "description": "Preparation and review of legal documents and agreements.",
-            "icon": "sap-icon://create-form"
+            "icon": "sap-icon://edit"
+        },
+        {
+            "name": "Legal Representation",
+            "description": "Representation and legal assistance for various legal matters",
+            "icon": "sap-icon://person-placeholder"
         }
     ]
 }
