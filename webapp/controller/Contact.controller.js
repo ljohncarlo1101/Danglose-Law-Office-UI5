@@ -1,9 +1,11 @@
 sap.ui.define([
   "sap/ui/core/mvc/Controller",
-  "sap/m/MessageBox"
+  "sap/m/MessageBox",
+  "sap/ui/core/BusyIndicator"
 ], (
   Controller,
-  MessageBox
+  MessageBox,
+  BusyIndicator
 ) => {
 
   "use strict";
@@ -173,6 +175,8 @@ sap.ui.define([
 
         oButton.setEnabled(false);
 
+        BusyIndicator.show(0);
+
         oButton.setText(
           "Sending Request..."
         );
@@ -224,6 +228,8 @@ sap.ui.define([
 
           .then(data => {
 
+            BusyIndicator.hide();
+
 
             if (data.success) {
 
@@ -251,6 +257,8 @@ sap.ui.define([
 
 
           .catch(error => {
+
+            BusyIndicator.hide();
 
 
             console.error(error);
