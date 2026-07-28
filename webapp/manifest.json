@@ -140,6 +140,12 @@
           "name": "RouteServiceDetail",
           "pattern": "service/{serviceId}",
           "target": "TargetServiceDetail"
+        },
+
+        {
+          "name": "RouteConfirmation",
+          "pattern": "confirmation",
+          "target": "TargetConfirmation"
         }
       ],
 
@@ -178,6 +184,12 @@
           "viewName": "ServiceDetail",
           "viewId": "ServiceDetail",
           "viewLevel": 2
+        },
+
+        "TargetConfirmation": {
+          "viewName": "Confirmation",
+          "viewId": "Confirmation",
+          "viewLevel": 3
         }
       }
     },

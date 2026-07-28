@@ -236,18 +236,12 @@ sap.ui.define([
               );
 
 
-              MessageBox.success(
-                "Your consultation request has been sent successfully.",
-                {
+              this.clearForm();
 
-                  onClose: () => {
 
-                    this.clearForm();
-
-                  }
-
-                }
-              );
+              this.getOwnerComponent()
+                .getRouter()
+                .navTo("RouteConfirmation");
 
 
             }

@@ -1,0 +1,62 @@
+<mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.Confirmation"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
+
+
+<Page
+    title="Request Submitted">
+
+
+    <content>
+
+
+        <VBox
+            class="sapUiLargeMargin"
+            alignItems="Center">
+
+
+            <core:Icon
+                src="sap-icon://message-success"
+                size="5rem"
+                color="green"/>
+
+
+            <Title
+                text="Thank You!"
+                level="H1"
+                class="sapUiMediumMarginTop"/>
+
+
+            <Text
+                text="Your consultation request has been received successfully."
+                wrapping="true"
+                textAlign="Center"/>
+
+
+            <Text
+                text="Our legal team will review your concern and contact you as soon as possible."
+                wrapping="true"
+                textAlign="Center"
+                class="sapUiSmallMarginTop"/>
+
+
+            <Button
+                text="Back to Home"
+                type="Emphasized"
+                icon="sap-icon://home"
+                press="onBackHome"
+                class="sapUiMediumMarginTop"/>
+
+
+        </VBox>
+
+
+    </content>
+
+
+</Page>
+
+
+</mvc:View>
