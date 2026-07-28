@@ -1,95 +1,147 @@
 <mvc:View
+    controllerName="com.john.employeeapp.com.john.employeeapp.controller.Attorney"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
-controllerName="com.john.employeeapp.com.john.employeeapp.controller.Attorney"
-xmlns:mvc="sap.ui.core.mvc"
-xmlns="sap.m"
-xmlns:core="sap.ui.core">
+    <Page
+        title="Attorney Profile">
 
-
-<Page
-    title="Attorney Profile">
-
-    <content>
-
-        <VBox
-            class="sapUiLargeMargin">
-
-
-            <Title
-                text="{attorney>/name}"
-                level="H1"/>
-
-
-            <Title
-                text="{attorney>/title}"
-                level="H3"/>
-
-
-            <Text
-                text="{attorney>/office}"
-                wrapping="true"
-                class="sapUiSmallMarginTop"/>
-
-
-        </VBox>
-
-        <Panel
-            headerText="Professional Profile"
-            class="sapUiMediumMarginTop">
 
         <content>
 
-            <Text
-                text="{attorney>/description}"
-                wrapping="true"/>
 
-        </content>
+            <VBox
+                width="100%"
+                alignItems="Center">
 
-        </Panel>
-
-        <Panel
-            headerText="Areas of Practice"
-            class="sapUiMediumMarginTop">
-
-            <content>
 
                 <VBox
-                    items="{attorney>/practiceAreas}">
+                    width="90%"
+                    class="sapUiLargeMargin">
 
+
+                    <!-- Attorney Header -->
+
+                    <VBox
+                        alignItems="Center">
+
+
+                        <Avatar
+                            src="{attorney>/photo}"
+                            displaySize="XL"
+                            displayShape="Circle"/>
+
+
+                        <Title
+                            text="{attorney>/name}"
+                            level="H1"
+                            class="sapUiMediumMarginTop"/>
+
+
+                        <Text
+                            text="{attorney>/title}"/>
+
+                        <HBox
+                            class="sapUiMediumMarginTop">
+
+
+                            <Button
+                                text="{attorney>/phone}"
+                                icon="sap-icon://call"/>
+
+
+                            <Button
+                                text="{attorney>/email}"
+                                icon="sap-icon://email"
+                                
+                                class="sapUiSmallMarginBegin"/>
+
+
+                        </HBox>
+
+
+                    </VBox>
+
+
+
+
+                    <!-- Professional Profile -->
 
                     <Panel
-                        class="sapUiSmallMargin">
+                        headerText="Professional Profile"
+                        class="sapUiMediumMarginTop">
 
 
                         <content>
 
 
-                            <HBox>
+                            <Text
+                                text="{attorney>/description}"
+                                wrapping="true"/>
 
 
-                                <core:Icon
-                                    src="{attorney>icon}"
-                                    size="2rem"
-                                    class="sapUiSmallMarginEnd"/>
+                        </content>
 
 
-                                <VBox>
+                    </Panel>
 
 
-                                    <Title
-                                        text="{attorney>name}"
-                                        level="H4"/>
 
 
-                                    <Text
-                                        text="{attorney>description}"
-                                        wrapping="true"/>
+                    <!-- Practice Areas -->
 
 
-                                </VBox>
+                    <Panel
+                        headerText="Practice Areas"
+                        class="sapUiMediumMarginTop">
 
 
-                            </HBox>
+                        <content>
+
+
+                            <List
+                                items="{attorney>/practiceAreas}">
+
+
+                                <CustomListItem>
+
+
+                                    <VBox
+                                        class="sapUiSmallMargin">
+
+
+                                        <HBox
+                                            alignItems="Center">
+
+
+                                            <core:Icon
+                                                src="{attorney>icon}"
+                                                size="1.5rem"/>
+
+
+                                            <Title
+                                                text="{attorney>name}"
+                                                level="H4"
+                                                class="sapUiSmallMarginBegin"/>
+
+
+                                        </HBox>
+
+
+                                        <Text
+                                            text="{attorney>description}"
+                                            wrapping="true"
+                                            class="sapUiSmallMarginTop"/>
+
+
+                                    </VBox>
+
+
+                                </CustomListItem>
+
+
+                            </List>
 
 
                         </content>
@@ -101,16 +153,13 @@ xmlns:core="sap.ui.core">
                 </VBox>
 
 
-            </content>
+            </VBox>
 
 
-        </Panel>
+        </content>
 
 
-    </content>
-
-
-</Page>
+    </Page>
 
 
 </mvc:View>

@@ -1,32 +1,37 @@
 {
-    "name": "Atty. Denize C. Danglose",
+  "name": "Atty. Denize C. Danglose",
+  "title": "Attorney-at-Law",
+  "photo": "/images/stu.jpg",
+  "office": "Danglose Law Office",
 
-    "title": "Attorney at Law",
+  "phone": "+63 912 345 6789",
+  "email": "denizedanglose@gmail.com",
 
-    "office": "Danglose Law Office",
+  "description": "A dedicated legal professional committed to providing reliable and ethical legal services. With extensive experience in various areas of law, I provide practical legal guidance, strategic representation, and personalized solutions tailored to every client's unique needs.",
 
-    "description": "Atty. Denize C. Danglose provides legal and notarial services with professionalism, integrity, and dedication to helping individuals, families, and businesses.",
+  "practiceAreas": [
+    {
+      "name": "Civil Law",
+      "description": "Handling contracts, property disputes, obligations, damages, and other civil matters.",
+      "icon": "sap-icon://document-text"
+    },
 
-    "practiceAreas": [
-        {
-            "name": "Legal Consultation",
-            "description": "Providing legal guidance and advice to help clients understand their legal concerns.",
-            "icon": "sap-icon://discussion"
-        },
-        {
-            "name": "Notarial Services",
-            "description": "Assistance with notarization and preparation of legal documents.",
-            "icon": "sap-icon://document-text"
-        },
-        {
-            "name": "Legal Documentation Preparation",
-            "description": "Preparation and review of legal documents and agreements.",
-            "icon": "sap-icon://edit"
-        },
-        {
-            "name": "Legal Representation",
-            "description": "Representation and legal assistance for various legal matters",
-            "icon": "sap-icon://person-placeholder"
-        }
-    ]
+    {
+      "name": "Criminal Law",
+      "description": "Providing legal defense, representation, and assistance in criminal proceedings.",
+      "icon": "sap-icon://shield"
+    },
+
+    {
+      "name": "Family Law",
+      "description": "Legal assistance involving annulment, child custody, adoption, support, and other family-related concerns.",
+      "icon": "sap-icon://family-care"
+    },
+
+    {
+      "name": "Labor Law",
+      "description": "Representing employees and employers in labor disputes, illegal dismissal, and workplace compliance.",
+      "icon": "sap-icon://employee"
+    }
+  ]
 }
