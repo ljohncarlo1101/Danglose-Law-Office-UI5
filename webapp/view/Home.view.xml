@@ -4,110 +4,400 @@
     xmlns="sap.m"
     xmlns:core="sap.ui.core">
 
+
     <Page
         title="Danglose Law Office">
 
+
         <content>
 
-    <VBox
-        justifyContent="Center"
-        alignItems="Center"
-        class="sapUiLargeMargin">
 
-        <Title
-            text="Justice. Integrity. Excellence."
-            level="H1"/>
+            <VBox
+                class="sapUiLargeMargin">
 
-        <Text
-            text="Professional legal services you can trust." />
 
-        <Button
-            text="Book a Consultation"
-            type="Emphasized"
-            press="onBookConsultation"
-            class="sapUiMediumMarginTop"/>
 
-        <Button
-            text="Our Services"
-            press="onServices"
-            class="sapUiSmallMarginTop"/>
+                <VBox
+                    alignItems="Center">
 
-        <Title
-            text="Why Choose Us?"
-            level="H2"
-            class="sapUiLargeMarginTop"/>
 
-            <HBox
-                justifyContent="Center"
-                wrap="Wrap"
-                class="sapUiMediumMarginTop">
-            
+                    <Title
+                        text="WELCOME TO DANGLOSE LAW OFFICE"
+                        level="H1"/>
 
-                    <Panel
-                        width="250px"
-                        class="sapUiSmallMargin">
 
-                        <headerToolbar>
-                            <Toolbar>
-                                <Title text="Legal Consultation"/>
-                            </Toolbar>
-                        </headerToolbar>
+                    <Text
+                        text="Professional Legal Services You Can Trust"
+                        wrapping="true"
+                        textAlign="Center"/>
 
-                        <content>
+
+                </VBox>
+
+
+                <!-- Core Values -->
+
+
+                <Title
+                    text="Our Core Values"
+                    level="H2"
+                    class="sapUiSmallMarginTop"/>
+
+
+
+                <List
+                    width="100%"
+                    showSeparators="Inner"
+                    class="sapUiMediumMarginTop">
+
+
+
+                    <CustomListItem>
+
+
+                        <HBox
+                            class="sapUiSmallMargin">
+
+
                             <core:Icon
-                                src="sap-icon://discussion-2"
+                                src="sap-icon://shield"
                                 size="2rem"
-                                class="sapUiSmallMarginBottom"/>
+                                class="sapUiMediumMarginEnd"/>
 
-                            <Text
-                                text="Professional legal advice tailored to your needs."/>
-                        </content>
-                    </Panel>
 
-                    <Panel
-                        width="250px"
+
+                            <VBox>
+
+
+                                <Title
+                                    text="Integrity"
+                                    level="H4"/>
+
+
+                                <Text
+                                    text="We uphold honesty, ethics, and professionalism in every legal matter."
+                                    wrapping="true"/>
+
+
+                            </VBox>
+
+
+                        </HBox>
+
+
+                    </CustomListItem>
+
+
+                    <CustomListItem>
+
+
+                        <HBox
+                            class="sapUiSmallMargin">
+
+
+                            <core:Icon
+                                src="sap-icon://locked"
+                                size="2rem"
+                                class="sapUiMediumMarginEnd"/>
+
+
+
+                            <VBox>
+
+
+                                <Title
+                                    text="Confidentiality"
+                                    level="H4"/>
+
+
+                                <Text
+                                    text="Your legal concerns are handled with privacy and utmost discretion."
+                                    wrapping="true"/>
+
+
+                            </VBox>
+
+
+                        </HBox>
+
+
+                    </CustomListItem>
+
+
+                    <CustomListItem>
+
+
+                        <HBox
+                            class="sapUiSmallMargin">
+
+
+                            <core:Icon
+                                src="sap-icon://accept"
+                                size="2rem"
+                                class="sapUiMediumMarginEnd"/>
+
+
+
+                            <VBox>
+
+
+                                <Title
+                                    text="Commitment"
+                                    level="H4"/>
+
+
+                                <Text
+                                    text="We are dedicated to providing reliable legal assistance focused on your needs."
+                                    wrapping="true"/>
+
+
+                            </VBox>
+
+
+                        </HBox>
+
+
+                    </CustomListItem>
+
+
+
+
+
+                    <CustomListItem>
+
+
+                        <HBox
+                            class="sapUiSmallMargin">
+
+
+                            <core:Icon
+                                src="sap-icon://employee"
+                                size="2rem"
+                                class="sapUiMediumMarginEnd"/>
+
+
+
+                            <VBox>
+
+
+                                <Title
+                                    text="Professionalism"
+                                    level="H4"/>
+
+
+                                <Text
+                                    text="Delivering quality legal services through experience and dedication."
+                                    wrapping="true"/>
+
+
+                            </VBox>
+
+
+                        </HBox>
+
+
+                    </CustomListItem>
+
+
+
+                </List>
+
+
+
+
+
+
+                <!-- How We Assist You -->
+
+
+                <Title
+                    text="How We Assist You"
+                    level="H2"
+                    class="sapUiLargeMarginTop"/>
+
+
+
+                <HBox
+                    justifyContent="Center"
+                    wrap="Wrap"
+                    class="sapUiMediumMarginTop">
+
+
+
+                    <VBox
+                        alignItems="Center"
+                        width="150px"
                         class="sapUiSmallMargin">
 
-                        <headerToolbar>
-                            <Toolbar>
-                                <Title text="Experienced Lawyers"/>
-                            </Toolbar>
-                        </headerToolbar>
 
-                        <content>
-                            <core:Icon
-                                src="sap-icon://group"
-                                size="2rem"/>
-                            <Text
-                                text="Our Experienced Attorneys are Ready to Assist You!."/>
-                        </content>
-                    </Panel>
+                        <core:Icon
+                            src="sap-icon://edit"
+                            size="2rem"/>
 
-                    <Panel
-                        width="250px"
+
+                        <Title
+                            text="1. Submit Concern"
+                            level="H4"/>
+
+
+                        <Text
+                            text="Provide details about your legal concern."
+                            textAlign="Center"
+                            wrapping="true"/>
+
+
+                    </VBox>
+
+
+
+
+
+                    <VBox
+                        alignItems="Center"
+                        width="150px"
                         class="sapUiSmallMargin">
 
-                        <headerToolbar>
-                            <Toolbar>
-                                <Title text="Client-Focused Service"/>
-                            </Toolbar>
-                        </headerToolbar>
 
-                        <content>
-                            <core:Icon
-                                src="sap-icon://customer"
-                                size="2rem"/>
-                            <Text
-                                text="We Provide Personalized Legal Solutions with Integrity."/>
-                        </content>
-                    </Panel>
+                        <core:Icon
+                            src="sap-icon://appointment"
+                            size="2rem"/>
 
-            </HBox>
 
-    </VBox>
+                        <Title
+                            text="2. Consultation"
+                            level="H4"/>
 
-</content>
+
+                        <Text
+                            text="Discuss your concern with our legal team."
+                            textAlign="Center"
+                            wrapping="true"/>
+
+
+                    </VBox>
+
+
+
+
+
+                    <VBox
+                        alignItems="Center"
+                        width="150px"
+                        class="sapUiSmallMargin">
+
+
+                        <core:Icon
+                            src="sap-icon://search"
+                            size="2rem"/>
+
+
+                        <Title
+                            text="3. Assessment"
+                            level="H4"/>
+
+
+                        <Text
+                            text="We evaluate your legal situation."
+                            textAlign="Center"
+                            wrapping="true"/>
+
+
+                    </VBox>
+
+
+
+
+
+                    <VBox
+                        alignItems="Center"
+                        width="150px"
+                        class="sapUiSmallMargin">
+
+
+                        <core:Icon
+                            src="sap-icon://accept"
+                            size="2rem"/>
+
+
+                        <Title
+                            text="4. Assistance"
+                            level="H4"/>
+
+
+                        <Text
+                            text="Receive professional legal guidance."
+                            textAlign="Center"
+                            wrapping="true"/>
+
+
+                    </VBox>
+
+
+
+                </HBox>
+
+
+
+
+
+
+
+                <!-- Final CTA -->
+
+
+                <VBox
+                    alignItems="Center"
+                    class="sapUiLargeMarginTop">
+
+
+
+                    <Title
+                        text="Ready to Discuss Your Legal Concern?"
+                        level="H2"/>
+
+
+
+                    <Text
+                        text="Schedule a consultation with Danglose Law Office today."
+                        wrapping="true"
+                        textAlign="Center"
+                        class="sapUiSmallMarginTop"/>
+
+
+                    <HBox
+                        justifyContent="Center"
+                        class="sapUiSmallMarginTop">
+
+
+                        <Button
+                            text="Book Consultation"
+                            type="Emphasized"
+                            icon="sap-icon://paper-plane"
+                            press="onBookConsultation"
+                            class="sapUiSmallMarginEnd"/>
+
+
+                        <Button
+                            text="View Services"
+                            type="Default"
+                            icon="sap-icon://activity-items"
+                            press="onServices"/>
+
+
+                    </HBox>
+
+
+                </VBox>
+
+
+
+            </VBox>
+
+
+        </content>
+
 
     </Page>
+
 
 </mvc:View>
