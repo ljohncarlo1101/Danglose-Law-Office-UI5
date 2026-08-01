@@ -19,7 +19,7 @@
                 <!-- Service Header -->
 
                 <HBox
-                    alignItems="Center"
+                    alignItems="Start"
                     class="sapUiMediumMarginBottom">
 
 
@@ -34,7 +34,8 @@
 
                         <Title
                             text="{services>/selected/title}"
-                            level="H1"/>
+                            level="H1"
+                            wrapping="true"/>
 
 
                         <Text
@@ -91,7 +92,8 @@
 
 
                                 <StandardListItem
-                                    title="{services>}"/>
+                                    title="{services>}"
+                                    wrapping="true"/>
 
 
                             </items>
@@ -128,7 +130,8 @@
 
 
                                 <StandardListItem
-                                    title="{services>}"/>
+                                    title="{services>}"
+                                    wrapping="true"/>
 
 
                             </items>
@@ -149,11 +152,16 @@
                 <!-- Consultation Button -->
 
 
-                <Button
-                    text="Book a Consultation"
-                    type="Emphasized"
-                    icon="sap-icon://appointment-2"
-                    press="onBookConsultation"/>
+                <HBox
+                    justifyContent="Center">
+
+                    <Button
+                        text="Book a Consultation"
+                        type="Emphasized"
+                        icon="sap-icon://appointment-2"
+                        press="onBookConsultation"/>
+
+                </HBox>
 
 
             </VBox>
