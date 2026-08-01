@@ -36,7 +36,8 @@
                         <content>
 
                             <HBox
-                                alignItems="Center">
+                                alignItems="Start"
+                                wrap="Wrap">
 
 
                                 <core:Icon
@@ -50,7 +51,8 @@
 
                                     <Title
                                         text="{services>title}"
-                                        level="H3" />
+                                        level="H3" 
+                                        wrapping="true"/>
 
 
                                     <Text
