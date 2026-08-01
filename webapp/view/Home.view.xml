@@ -24,7 +24,9 @@
 
                     <Title
                         text="WELCOME TO DANGLOSE LAW OFFICE"
-                        level="H1"/>
+                        level="H1"
+                        wrapping="true"
+                        textAlign="Center"/>
 
 
                     <Text
