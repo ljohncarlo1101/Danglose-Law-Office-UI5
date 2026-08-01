@@ -2,7 +2,8 @@
     controllerName="com.john.employeeapp.com.john.employeeapp.controller.Home"
     xmlns:mvc="sap.ui.core.mvc"
     xmlns="sap.m"
-    xmlns:core="sap.ui.core">
+    xmlns:core="sap.ui.core"
+    xmlns:l="sap.ui.layout">
 
 
     <Page
@@ -366,6 +367,7 @@
 
                     <HBox
                         justifyContent="Center"
+                        wrap="Wrap"
                         class="sapUiSmallMarginTop">
 
 

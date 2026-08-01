@@ -1,64 +1,64 @@
 <mvc:View
     controllerName="com.john.employeeapp.com.john.employeeapp.controller.App"
     xmlns:mvc="sap.ui.core.mvc"
-    xmlns="sap.m">
+    xmlns="sap.m"
+    xmlns:core="sap.ui.core">
 
 
 <Page>
 
+
     <customHeader>
 
-        <Bar>
 
-            <contentLeft>
-
-                <Title
-                    text="Danglose Law Office"
-                    titleStyle="H3"/>
-
-            </contentLeft>
+        <OverflowToolbar>
 
 
-            <contentRight>
-
-                <Button
-                    icon="sap-icon://home"
-                    text="Home"
-                    press="onHome"
-                    class="sapUiSmallMarginBegin"/>
+            <Title
+                text="Danglose Law Office"
+                titleStyle="H3"/>
 
 
-                <Button
-                    icon="sap-icon://official-service"
-                    text="About"
-                    press="onAbout"
-                    class="sapUiSmallMarginBegin"/>
+            <ToolbarSpacer/>
 
 
-                <Button
-                    icon="sap-icon://customer-view"
-                    text="Services"
-                    press="onServices"
-                    class="sapUiSmallMarginBegin"/>
+            <Button
+                icon="sap-icon://home"
+                text="Home"
+                press="onHome"
+                type="Transparent"/>
 
 
-                <Button
-                    icon="sap-icon://employee"
-                    text="Attorney"
-                    press="onAttorney"
-                    class="sapUiSmallMarginBegin"/>
+            <Button
+                icon="sap-icon://official-service"
+                text="About"
+                press="onAbout"
+                type="Transparent"/>
 
 
-                <Button
-                    icon="sap-icon://email"
-                    text="Contact"
-                    press="onContact"
-                    class="sapUiSmallMarginBegin"/>
+            <Button
+                icon="sap-icon://customer-view"
+                text="Services"
+                press="onServices"
+                type="Transparent"/>
 
 
-            </contentRight>
+            <Button
+                icon="sap-icon://employee"
+                text="Attorney"
+                press="onAttorney"
+                type="Transparent"/>
 
-        </Bar>
+
+            <Button
+                icon="sap-icon://email"
+                text="Contact"
+                press="onContact"
+                type="Transparent"/>
+
+
+        </OverflowToolbar>
+
 
     </customHeader>
 
