@@ -36,14 +36,20 @@
                         <Title
                             text="{attorney>/name}"
                             level="H1"
-                            class="sapUiMediumMarginTop"/>
+                            class="sapUiMediumMarginTop"
+                            wrapping="true"
+                            textAlign="Center"/>
 
 
                         <Text
-                            text="{attorney>/title}"/>
+                            text="{attorney>/title}"
+                            wrapping="true"
+                            textAlign="Center"/>
 
                         <HBox
-                            class="sapUiMediumMarginTop">
+                            class="sapUiMediumMarginTop"
+                            justifyContent="Center"
+                            wrap="Wrap">
 
 
                             <Button
@@ -123,7 +129,8 @@
                                             <Title
                                                 text="{attorney>name}"
                                                 level="H4"
-                                                class="sapUiSmallMarginBegin"/>
+                                                class="sapUiSmallMarginBegin"
+                                                wrapping="true"/>
 
 
                                         </HBox>

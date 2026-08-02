@@ -44,7 +44,8 @@
                 <Title
                     text="Our Core Values"
                     level="H2"
-                    class="sapUiSmallMarginTop"/>
+                    class="sapUiMediumMarginTop"
+                    wrapping="true"/>
 
 
 
@@ -74,7 +75,8 @@
 
                                 <Title
                                     text="Integrity"
-                                    level="H4"/>
+                                    level="H4"
+                                    wrapping="true"/>
 
 
                                 <Text
@@ -110,7 +112,8 @@
 
                                 <Title
                                     text="Confidentiality"
-                                    level="H4"/>
+                                    level="H4"
+                                    wrapping="true"/>
 
 
                                 <Text
@@ -146,7 +149,8 @@
 
                                 <Title
                                     text="Commitment"
-                                    level="H4"/>
+                                    level="H4"
+                                    wrapping="true"/>
 
 
                                 <Text
@@ -185,7 +189,8 @@
 
                                 <Title
                                     text="Professionalism"
-                                    level="H4"/>
+                                    level="H4"
+                                    wrapping="true"/>
 
 
                                 <Text
@@ -216,7 +221,8 @@
                 <Title
                     text="How We Assist You"
                     level="H2"
-                    class="sapUiLargeMarginTop"/>
+                    class="sapUiLargeMarginTop"
+                    wrapping="true"/>
 
 
 
@@ -356,7 +362,9 @@
 
                     <Title
                         text="Ready to Discuss Your Legal Concern?"
-                        level="H2"/>
+                        level="H2"
+                        wrapping="true"
+                        textAlign="Center"/>
 
 
 

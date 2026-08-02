@@ -16,7 +16,8 @@
 
                 <Title
                     text="Our Legal Services"
-                    level="H1" />
+                    level="H1"
+                    wrapping="true"/>
 
 
                 <Text
