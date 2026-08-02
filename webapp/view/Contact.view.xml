@@ -17,7 +17,8 @@
 
                 <Title
                     text="Book a Consultation"
-                    level="H1"/>
+                    level="H1"
+                    wrapping="true"/>
 
 
                 <Text
@@ -164,14 +165,19 @@
 
 
                 <!-- Submit -->
-
-                <Button
+                <HBox 
+                    justifyContent="Center">
+                
+                    <Button
                     id="submitButton"
                     text="Submit Consultation Request"
                     type="Emphasized"
                     icon="sap-icon://paper-plane"
                     press="onSubmit"
                     class="sapUiMediumMarginTop"/>
+                
+                </HBox>
+                
 
 
 
