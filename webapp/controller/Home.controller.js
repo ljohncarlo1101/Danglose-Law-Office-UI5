@@ -22,8 +22,8 @@ sap.ui.define(
 
         onServices() {
           this.getOwnerComponent().getRouter().navTo("RouteServices");
-        },
-      },
+        }
+      }
     );
-  },
+  }
 );

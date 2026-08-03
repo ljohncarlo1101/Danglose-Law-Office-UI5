@@ -211,7 +211,9 @@ sap.ui.define([
 
 
         fetch(
-          "https://script.google.com/macros/s/AKfycbxL3czpfheESpWS6gIqIMOtyz24L4ogjeqYjiOBonPCVfJq0q-3dLyDJsk1cDlhLKoBiw/exec",
+            this.getOwnerComponent()
+              .getModel("config")
+              .getProperty("/contactFormUrl"),
           {
 
             method: "POST",
